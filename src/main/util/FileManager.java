@@ -140,7 +140,7 @@ public class FileManager {
 					}
 				}
 				else {
-					it = new IncomingTransaction(new Date(col[1]));
+					it = new IncomingTransaction(new Date());
 					its.add(it);
 				}
 			}
@@ -188,7 +188,7 @@ public class FileManager {
 				else {
 					try {
 						Store s = sm.findStoreByID(Integer.parseInt(col[0]));
-						ot = new OutgoingTransaction(s, new Date(col[2]));
+						ot = new OutgoingTransaction(s, new Date());
 						ots.add(ot);
 					}catch(NumberFormatException nfe) {
 						System.out.println("Number format error.");

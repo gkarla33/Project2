@@ -1,5 +1,6 @@
 package transactions;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -88,7 +89,7 @@ public abstract class Transaction
 
 	public int getMonth()
 	{
-		return date.getMonth();
+		return Calendar.MONTH;
 	}
 	
 	public String getDate()

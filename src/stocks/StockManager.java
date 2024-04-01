@@ -1,6 +1,5 @@
 package stocks;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import main.util.FileManager;
